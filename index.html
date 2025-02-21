@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Covirán</title>
+        <link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+        <style>
+            /* Reinicio de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+#headerArriba {
+    background-color: #ededed;
+    padding: 10px 20px;
+}
+
+#headerIzq {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+#headerIzq img {
+    margin-right: 5px;
+}
+
+#headerIzq p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#headerDer {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#headerDer p {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+
+#headerDer a {
+    text-decoration: none;
+    color: #333;
+}
+
+#headerDer img {
+    margin-left: 10px;
+}
+
+.cb {
+    clear: both;
+}
+
+#headerAbajo {
+    background-color: #fff;
+    border-top: 3px solid #ed1b24;
+    border-bottom: 3px solid #ed1b24;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    width: 80%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+
+nav ul li ul li:hover {
+    background-color: #f5f5f5;
+}
+
+main {
+    padding: 20px;
+}
+
+#fotoBusta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#fotoBusta img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+}
+
+#noticias {
+    display: flex;
+    justify-content: space-between;
+}
+
+#noticias article {
+    width: 32%;
+    text-align: center;
+}
+
+#noticias article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#noticias article p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #ededed;
+    padding: 20px 0;
+}
+
+#footerArriba {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menuAbajo p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#footerAbajo {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+#footerAbajo p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#footerAbajoFoto {
+    margin: 20px 0;
+}
+
+#footerAbajoFoto img {
+    max-width: 100%;
+    height: auto;
+}
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div id="headerArriba">
+                    <div id="headerIzq">
+                        <img src="espana.png" alt="logo España"/>
+                        <img src="portugal.png" alt="logo Portugal"/>
+                        <p>atencionalcliente@coviran.es</p> 
+                    </div>
+                    <div id="headerDer">
+                        <p><a href="index.html">Acceso privado</a></p>
+                        <img src="facebook_20.png" alt="logo facebook"/>
+                        <img src="twitter_20.gif" alt="logo twitter"/>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div id="headerAbajo">
+                    <div id="logo">
+                        <img src="logo.png" alt="Logo Covirán"/>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>INICIO</li>
+                            <li>QUIÉNES SOMOS
+                                <ul>
+                                    <li>CIFRAS</li>
+                                    <li>DISTINCIONES</li>
+                                    <li>HISTORIA</li>
+                                    <li>MISIÓN, VISIÓN Y VALORES</li>
+                                    <li>OBJETO Y ALCANCE</li>
+                                </ul>
+                            </li>
+                            <li>QUIERE SER SOCIO</li>
+                            <li>TRABAJA CON NOSOTROS</li>
+                            <li>SALA DE PRENSA</li>
+                            <li>CONTACTO</li>
+                        </ul>
+                    </nav>
+                    <div class="cb"></div>
+                </div>
+            </header>
+            <main>
+                <section id="fotoBusta">
+                    <img src="coviran-bustamante.png" alt="foto Bustamante"/>
+                    <img src="fanta2.png" alt="foto Fanta"/>
+                </section>
+                <section id="noticias">
+                    <article>
+                        <img src="noticia1.jpeg" alt="Noticia 1"/>
+                        <p>Los supermercados Coviran siguen dando pasos en materia de responsabilidad y confianza</p>
+                    </article>
+                    <article>
+                        <img src="noticia2.jpeg" alt="Noticia 2"/>
+                        <p>Los supermercados Coviran siguen dando pasos en materia de responsabilidad y confianza</p>
+                    </article>
+                    <article>
+                        <img src="noticia3.jpeg" alt="Noticia 3"/>
+                        <p>Los supermercados Coviran siguen dando pasos en materia de responsabilidad y confianza</p>
+                    </article>
+                    <div class="cb"></div>
+                </section>
+            </main>
+            <footer>
+                <div id="footerArriba">
+                    <div class="menuAbajo">
+                        <p>Supermercados</p>
+                    </div>
+
+                    <div class="menuAbajo">
+                        <p>Folletos</p>
+                    </div>
+
+                    <div class="menuAbajo">
+                        <p>Otros servicios</p>
+                    </div>
+
+                    <div class="menuAbajo">
+                        <p>Redes sociales</p>
+                    </div>
+                    <div class="cb"></div>
+                </div>
+                <div id="footerAbajo">
+                    <p>Colaboradores 50 años Covirán</p>
+                    <div id="footerAbajoFoto">
+                        <img src="patrocinadores1.png" alt="Colaboradores"/>
+                    </div>
+                    <p>Covirán S.C.A. Atención al cliente: 901 000 111</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
